@@ -1,0 +1,107 @@
+/* The styles for the elements */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin-left: 2em;
+    margin-right: 2em;
+    background: linear-gradient(135deg, #e6f0fa 0%, #d7e1f0 100%); /* Gradient nền xanh nhạt sang tím nhạt */
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {     
+    font-size: 140%;
+    color: #2c5282; /* Xanh dương đậm */
+    margin-bottom: .5em;    
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+br {
+    clear: both;
+}
+
+#quantity {
+    width: 2em;
+}
+
+/* The styles for the tables */
+table {
+    border: 1px solid #edf2f7; /* Viền nhạt hơn */
+    border-collapse: collapse;
+    width: 50em;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #edf2f7;
+    text-align: left;
+    padding: .8em; /* Tăng padding cho thoải mái hơn */
+}
+
+th {
+    background: linear-gradient(45deg, #4299e1, #9f7aea); /* Gradient xanh dương sang tím */
+    color: white;
+    font-weight: bold;
+}
+
+td.right {
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background: #f7fafc; /* Nền xen kẽ nhạt */
+}
+
+tr:hover {
+    background: #edf2f7; /* Hover effect */
+    transition: background 0.3s ease;
+}
+
+/* Nút Add to Cart */
+input[type="submit"] {
+    background: linear-gradient(45deg, #48bb78, #38a169); /* Gradient xanh lá */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #38a169, #2f855a);
+    transform: scale(1.05);
+}
+
+/* Link download MP3 (nếu có, dựa trên yêu cầu trước) */
+.download-link {
+    color: #2b6cb0; /* Màu xanh đậm hơn cho dễ nhìn */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.download-link:hover {
+    color: #9f7aea; /* Tím để nổi bật */
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    h1 {
+        font-size: 120%;
+    }
+}
