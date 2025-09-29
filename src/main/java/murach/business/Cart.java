@@ -29,7 +29,7 @@ public class Cart implements Serializable {
                 return;
             }
         }
-        // Nếu mặt hàng chưa tồn tại, thêm mới với số lượng là 1
+        // Nếu mặt hàng chưa tồn tại, thêm mới với sl là 1
         item.setQuantity(1);
         items.add(item);
     }
